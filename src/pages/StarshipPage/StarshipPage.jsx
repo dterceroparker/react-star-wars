@@ -1,11 +1,11 @@
-//npm modules
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// npm modules
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 
-//services
-import { getStarship } from '../../Services/sw-api';
 
-//css
+// services
+import { getStarship } from "../../Services/sw-api"
+
 import './StarshipPage.css'
 
 const StarshipPage = () => {
@@ -16,21 +16,24 @@ const StarshipPage = () => {
     const fetchDetails = async () => {
       // API CALL
       const starshipData = await getStarship(idx)
+      console.log(starshipData)
       // SET STATE
       setStarshipDetails(starshipData)
     }
     fetchDetails()
   }, [idx])
 
-  if (!starshipDetails.name) return <h1 id='header'>Loading Ship...</h1>
+  if (!starshipDetails.name) return <h1 id="header" >Loading Ship...</h1>
 
-  return ( 
+  return (
     <>
-      <h1 id='header'>Starships Details </h1>
-    <div className="starship-details">
-      {/* <h2>{starshipPage.name}</h2> */}
-
-    </div>
+      <h1 id="header">Starship Details</h1>
+      <main className="starship-details">
+        <h2>Name: {starshipDetails.name}</h2>
+        <h3>Model: {starshipDetails.model}</h3>
+        <h4>Crew: {starshipDetails.crew}</h4>
+        <p>Passengers: {starshipDetails.passengers}</p>
+      </main>
     </>
   )
 }
