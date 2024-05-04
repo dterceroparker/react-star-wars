@@ -25,7 +25,7 @@ const StarshipList = () => {
 
   return ( 
     <>
-      <h1 id='header'>Starships!</h1>
+      <h1 id='header'>Starships Inventory </h1>
       <main className="starship-list">
         {starshipList.map((starship, idx) =>
           <div className="starship-card" key={idx}>
