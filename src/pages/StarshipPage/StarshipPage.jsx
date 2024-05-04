@@ -1,6 +1,7 @@
 // npm modules
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 // services
@@ -33,6 +34,8 @@ const StarshipPage = () => {
         <h3>Model: {starshipDetails.model}</h3>
         <h4>Crew: {starshipDetails.crew}</h4>
         <p>Passengers: {starshipDetails.passengers}</p>
+        <link /><buttton></buttton>
+        <NavLink to='/starships'><button>Back</button></NavLink>
       </main>
     </>
   )
