@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/starships' element={<StarshipList />} />
-        <Route path='/starships/:starshipId' element={<StarshipPage />} />
+        <Route path='/starships/:idx' element={<StarshipPage />} />
       </Routes>
     </>
   )

@@ -24,14 +24,16 @@ const StarshipList = () => {
   if (!starshipList.length) return <h1>Loading starship list....</h1>
 
   return ( 
-    <main className="page-container">
-      <h1>Starships!</h1>
-      {starshipList.map((starship, idx) =>
-        <div className="starship-list" key={idx}>
-          <Link style={{color: "white"}} to={`/starships/${starship}`}>{starship.name}</Link>
-        </div>
-      )}
-    </main>
+    <>
+      <h1 id='header'>Starships!</h1>
+      <main className="starship-list">
+        {starshipList.map((starship, idx) =>
+          <div className="starship-card" key={idx}>
+            <Link to={`/starships/${starship}`}> {starship.name}</Link>
+          </div>
+        )}
+      </main>
+    </>
   )
 }
 
