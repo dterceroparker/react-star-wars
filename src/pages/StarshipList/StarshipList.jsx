@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 // services
 import { getAllStarships } from '../../Services/sw-api';
 
+import './StarshipList.css'
+
 const StarshipList = () => {
   const [starshipList, setStarshipList] = useState([])
   console.log(starshipList)
@@ -22,10 +24,10 @@ const StarshipList = () => {
   if (!starshipList.length) return <h1>Loading starship list....</h1>
 
   return ( 
-    <main className="starship-list">
+    <main className="page-container">
       <h1>Starships!</h1>
       {starshipList.map((starship, idx) =>
-        <div className="page-container" key={idx}>
+        <div className="starship-list" key={idx}>
           <Link style={{color: "white"}} to={`/starships/${starship}`}>{starship.name}</Link>
         </div>
       )}
