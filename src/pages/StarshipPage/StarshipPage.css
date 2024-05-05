@@ -42,6 +42,7 @@
   transition: border-color 0.25s;
   margin-top: 40px;
 }
+
 .back-btn:hover {
   border-color: #646cff;
 }
