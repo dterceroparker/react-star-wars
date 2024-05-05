@@ -17,7 +17,7 @@ const StarshipPage = () => {
     const fetchDetails = async () => {
       // API CALL
       const starshipData = await getStarship(idx)
-      console.log(starshipData)
+      // console.log(starshipData)
       // SET STATE
       setStarshipDetails(starshipData)
     }
@@ -34,7 +34,6 @@ const StarshipPage = () => {
         <h3>Model: {starshipDetails.model}</h3>
         <h4>Crew: {starshipDetails.crew}</h4>
         <p>Passengers: {starshipDetails.passengers}</p>
-        <link /><buttton></buttton>
         <NavLink to='/starships'><button className="back-btn">Back</button></NavLink>
       </main>
     </>

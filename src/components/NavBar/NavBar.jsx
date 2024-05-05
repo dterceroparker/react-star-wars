@@ -12,7 +12,7 @@ const NavBar = () => {
       <nav>
       <SiStarship className='icon'/>
         <NavLink to='/starships' >
-        STAR WARS SHIPS
+        STAR WARS STARSHIPS
         </NavLink>
       </nav>
     </header>
