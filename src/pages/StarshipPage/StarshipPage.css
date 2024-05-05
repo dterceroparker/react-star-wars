@@ -3,12 +3,12 @@
 }
 
 .starship-details {
-  height: 30vh;
+  height: 50vh;
   /* min-width: 25vw; */
   width: 50%;
   border-radius: 8px;
   border: 1px solid rgba(100, 148, 237, 0.52);
-  padding: 20px;
+  /* padding: 200px; */
   font-size: 1.7em;
   /* font-weight: 500; */
   font-family: inherit;
@@ -20,15 +20,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 100px;
+  box-shadow: 5px 5px 5px rgba(246, 255, 0, 0.26);
 }
 
 .starship-details:hover {
   border-color: #d2e013;
 }
 
-/* .starship-details:focus,
-.starship-details:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+.back-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #eae60098;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 40px;
+}
+.back-btn:hover {
+  border-color: #646cff;
+}
+.back-btn:focus,
+.back-btn:focus-visible {
+  outline: 9px auto -webkit-focus-ring-color;
+}

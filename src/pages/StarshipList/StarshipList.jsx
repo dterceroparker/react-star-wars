@@ -29,7 +29,7 @@ const StarshipList = () => {
       <main className="starship-list">
         {starshipList.map((starship, idx) =>
           <div className="starship-card" key={idx}>
-            <Link to={`/starships/${starship}`}> {starship.name}</Link>
+            <Link to={`/starships/${starship.url.replace("https://swapi.dev/api/starships/", "")}`}> {starship.name}</Link>
           </div>
         )}
       </main>

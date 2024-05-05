@@ -28,14 +28,14 @@ const StarshipPage = () => {
 
   return (
     <>
-      <h1 id="header">Starship Details</h1>
+      <h1 id="header">Starship Card</h1>
       <main className="starship-details">
         <h2>Name: {starshipDetails.name}</h2>
         <h3>Model: {starshipDetails.model}</h3>
         <h4>Crew: {starshipDetails.crew}</h4>
         <p>Passengers: {starshipDetails.passengers}</p>
         <link /><buttton></buttton>
-        <NavLink to='/starships'><button>Back</button></NavLink>
+        <NavLink to='/starships'><button className="back-btn">Back</button></NavLink>
       </main>
     </>
   )
