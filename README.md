@@ -1,3 +1,7 @@
+
+![Image 1](src/assets/images/Landing.png)
+![Image 2](src/assets/images/StarshipCard.png)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
